@@ -70,22 +70,54 @@
 		95D0852428765671004B7CEE /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				95D0852528765671004B7CEE /* AppDelegate.swift */,
-				95D0852728765671004B7CEE /* SceneDelegate.swift */,
-				95D0853D28790344004B7CEE /* GFButton.swift */,
-				95D0853F28790B00004B7CEE /* GFTextField.swift */,
-				95D085392877B38B004B7CEE /* SearchVC.swift */,
-				95D0853B2877B40B004B7CEE /* FavoritesListVC.swift */,
-				95D085412886457C004B7CEE /* FollowerListVC.swift */,
-				95D0854728879B36004B7CEE /* GFAlertVC.swift */,
-				95D085492887A70C004B7CEE /* UIViewController+Ext.swift */,
-				95D08543288792B0004B7CEE /* GFTitleLabel.swift */,
-				95D0854528879716004B7CEE /* GFBodyLabel.swift */,
-				95D0852E28765674004B7CEE /* Assets.xcassets */,
-				95D0853028765674004B7CEE /* LaunchScreen.storyboard */,
+				95D0854D2888F081004B7CEE /* Extensions */,
+				95D0854C2888F058004B7CEE /* Custom Views */,
+				95D0854B2888F01D004B7CEE /* Screens */,
+				95D0854E2888F0E6004B7CEE /* Support */,
 				95D0853328765674004B7CEE /* Info.plist */,
 			);
 			path = GitHubFollowers;
+			sourceTree = "<group>";
+		};
+		95D0854B2888F01D004B7CEE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				95D085412886457C004B7CEE /* FollowerListVC.swift */,
+				95D0853B2877B40B004B7CEE /* FavoritesListVC.swift */,
+				95D085392877B38B004B7CEE /* SearchVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		95D0854C2888F058004B7CEE /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				95D0854728879B36004B7CEE /* GFAlertVC.swift */,
+				95D0853D28790344004B7CEE /* GFButton.swift */,
+				95D0853F28790B00004B7CEE /* GFTextField.swift */,
+				95D08543288792B0004B7CEE /* GFTitleLabel.swift */,
+				95D0854528879716004B7CEE /* GFBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		95D0854D2888F081004B7CEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95D085492887A70C004B7CEE /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95D0854E2888F0E6004B7CEE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				95D0853028765674004B7CEE /* LaunchScreen.storyboard */,
+				95D0852528765671004B7CEE /* AppDelegate.swift */,
+				95D0852728765671004B7CEE /* SceneDelegate.swift */,
+				95D0852E28765674004B7CEE /* Assets.xcassets */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
