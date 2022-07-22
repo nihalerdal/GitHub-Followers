@@ -19,7 +19,10 @@ class FollowerListVC: UIViewController {
 
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)//use this istead of isNavigationBarHidden in order to see navbar during swipe back.
+    }
 
 
 }
