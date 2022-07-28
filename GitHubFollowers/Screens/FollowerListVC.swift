@@ -25,17 +25,16 @@ class FollowerListVC: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)//use this istead of isNavigationBarHidden in order to see navbar during swipe back.
         
-        NetworkManager.shared.getFollowers(for: username, page: 1) { followers, errorMessage in
-            guard let followers = followers else {
-                self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: errorMessage!, buttonTitle: "Ok")
-                return
-            }
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
             
-            print("Followers.count = \(followers.count)")
-            print(followers)
-
+            switch result {
+                
+            case .success(let followers):
+                print(followers)
+                
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
+            }
         }
     }
-
-
 }
